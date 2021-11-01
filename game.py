@@ -23,33 +23,32 @@ forward, backward, right, left
 
 You also have an option to quit the game. The option is provided in the menu.
 
-There is also an option to find your location in the map. It is accessible in the menu
+An option to find your location in the map is accessible in the menu
 
 """)
 
 
 # This inventory is paired with specific characters
 inventory = {"Batman": {"Night Vision Goggles":
-                        {"description": """Use the Night Vision Goggles to see
-                        in the dark and find your way""",}},
+                        {"description": """ Use the Night Vision Goggles to see
+                        in the dark and find your way """, }},
              "Green Lantern": {"Power Ring":
-                           {"description":
-                            "Use this ring as a flashlight to find their way",}}
-             }
+                               {"description":
+                                "Use it as a flashlight to find their way", }}}
 
 # This dictionary includes the descriptions of Batman
 
 
-character = {"Batman" : 
-                        {"description":
-                        "I am a ruthless vigilante and my real name is Bruce Wayne!"}}
+character = {"Batman":
+             {"description":
+              "I am a vigilante and my real name is Bruce Wayne!"}}
 
 # This dictionary includes the description of Green Lantern
 
 
-character_2 = {"Green Lantern" :
-                                  {"description":
-                                  "My name is Hal Jordan. I come from the Planet Mogo"}}       
+character_2 = {"Green Lantern":
+               {"description":
+                "My name is Hal Jordan. I come from the Planet Mogo"}}
 
 
 def player_inventory(player, inventory):
@@ -113,7 +112,7 @@ def character_intro():
     """ Prints out the character intro for Batman """
     print("""
   You have chosen Batman as you character. You will use Batman to get out
-  of this maze. You can use a hint to complete a level. 
+  of this maze. You can use a hint to complete a level.
   """)
 
 
