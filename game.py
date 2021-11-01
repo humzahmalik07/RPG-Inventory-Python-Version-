@@ -23,6 +23,8 @@ forward, backward, right, left
 
 You also have an option to quit the game. The option is provided in the menu.
 
+There is also an option to find your location in the map. It is accessible in the menu
+
 """)
 
 
@@ -70,17 +72,17 @@ def character_inventory_2(player_2, character_2):
         description_2 = character_2[player_2]["description"]
         print(f"{player_2}'s {item} - {description_2}")
 
+# This prints out the current location of the user
 location = {
-  "line 1": "Level 1",
-  "line 2": "level 2",
-  "line 3": "Level 3",
-  "line 4": "level 4",
-  "line 5": "Level 5",
-  "line 6": "level 6",
-  "line 7": "Level 7",
-  "line 8": "level 8",
-  "line 9": "Level 9",
-  "line 10": "level 10"
+  "line 1": "Your location is Tile 1. 9 more to go!",
+  "line 2": "Your location is Tile 2. 8 more to go!",
+  "line 3": "Your location is Tile 3. 7 more to go!",
+  "line 4": "Your location is Tile 4. 6 more to go!",
+  "line 5": "Your location is Tile 5. 5 more to go!",
+  "line 6": "Your location is Tile 6. 4 more to go!",
+  "line 7": "Your location is Tile 7. 3 more to go!",
+  "line 8": "Your location is Tile 8. 2 more to go!",
+  "line 9": "Your location is Tile 9. 1 more to go!",
 }
 
 # This takes the input for the character selection
@@ -92,7 +94,7 @@ inventory_input = input("Batman or Green Lantern: ")
 # valid directions and actions to move
 
 
-valid_actions = ["forward", "backward", "left", "right", "quit"]
+valid_actions = ["forward", "backward", "left", "right", "quit", "location"]
 
 
 # valid action or hint for Batman
@@ -174,6 +176,10 @@ def action_1():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 1"]
+        print(y)
+        action_1()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -210,6 +216,10 @@ def action_2():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 2"]
+        print(y)
+        action_2()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -246,6 +256,10 @@ def action_3():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 3"]
+        print(y)
+        action_3()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -282,6 +296,10 @@ def action_4():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 4"]
+        print(y)
+        action_4()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -318,6 +336,10 @@ def action_5():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 5"]
+        print(y)
+        action_5()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -354,6 +376,10 @@ def action_6():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 6"]
+        print(y)
+        action_6()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -390,6 +416,10 @@ def action_7():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 7"]
+        print(y)
+        action_7()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -425,6 +455,10 @@ def action_8():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 8"]
+        print(y)
+        action_8()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -461,6 +495,10 @@ def action_9():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 9"]
+        print(y)
+        action_9()
     if action_input.lower() in valid_hint[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -499,6 +537,10 @@ def actions_1():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 1"]
+        print(y)
+        actions_1()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your
@@ -535,6 +577,10 @@ def actions_2():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 2"]
+        print(y)
+        actions_2()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your next
@@ -571,6 +617,10 @@ def actions_3():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 3"]
+        print(y)
+        actions_3()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your next
@@ -607,6 +657,10 @@ def actions_4():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 4"]
+        print(y)
+        actions_4()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -643,6 +697,10 @@ def actions_5():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 5"]
+        print(y)
+        actions_5()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -679,6 +737,10 @@ def actions_6():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 6"]
+        print(y)
+        actions_6()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -715,6 +777,10 @@ def actions_7():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 7"]
+        print(y)
+        actions_7()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -751,6 +817,10 @@ def actions_8():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 8"]
+        print(y)
+        actions_8()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -788,6 +858,10 @@ def actions_9():
     if action_input.lower() in valid_actions[4]:
         print(" You have quit the game ")
         quit()
+    if action_input.lower() in valid_actions[5]:
+        y = location["line 9"]
+        print(y)
+        actions_9()
     if action_input.lower() in valid_hint_2[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
