@@ -35,11 +35,53 @@ inventory = {"Batman": {"Night Vision Goggles":
                             "Use this ring as a flashlight to find their way",}}
              }
 
+# This dictionary includes the descriptions of Batman
+
+
+character = {"Batman" : 
+                        {"description":
+                        "I am a ruthless vigilante and my real name is Bruce Wayne!"}}
+
+# This dictionary includes the description of Green Lantern
+
+
+character_2 = {"Green Lantern" :
+                                  {"description":
+                                  "My name is Hal Jordan. I come from the Planet Mogo"}}       
+
+
 def player_inventory(player, inventory):
     """Print out the inventory for the choosen character"""
     for item in inventory[player]:
         description = inventory[player][item]["description"]
         print(f"{player}'s {item} - {description}")
+
+
+def character_inventory(player, character):
+    """ prints out the description for Batman """
+    for item in character[player]:
+        description = character[player]["description"]
+        print(f"{player}'s {item} - {description}")
+
+
+def character_inventory_2(player_2, character_2):
+    """ prints out the description for Green Lantern """
+    for item in character_2[player_2]:
+        description_2 = character_2[player_2]["description"]
+        print(f"{player_2}'s {item} - {description_2}")
+
+location = {
+  "line 1": "Level 1",
+  "line 2": "level 2",
+  "line 3": "Level 3",
+  "line 4": "level 4",
+  "line 5": "Level 5",
+  "line 6": "level 6",
+  "line 7": "Level 7",
+  "line 8": "level 8",
+  "line 9": "Level 9",
+  "line 10": "level 10"
+}
 
 # This takes the input for the character selection
 
@@ -763,6 +805,7 @@ while True:
     if inventory_input == "Batman":
         character_intro()
         player_inventory("Batman", inventory)
+        character_inventory("Batman", character)
         action_1()
         action_2()
         action_3()
@@ -776,6 +819,7 @@ while True:
     if inventory_input == "Green Lantern":
         character_intro_2()
         player_inventory("Green Lantern", inventory)
+        character_inventory_2("Green Lantern", character_2)
         actions_1()
         actions_2()
         actions_3()
