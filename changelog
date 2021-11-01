@@ -1,7 +1,12 @@
 # changelog
 All important changes of this project will be documented here
 
-## [0.0.3] 2021-08-15
+## [0.0.4] 2021-11-01
+### Added 
+- location is added for each level in the game
+- location is accessible from the menu
+
+## [0.0.3] 2021-10-15
 ### Added 
 - A quit option is added
 - Docstrings are added
@@ -13,7 +18,7 @@ All important changes of this project will be documented here
 ### removed
 - The file "main.py" was removed
 
-## [0.0.2] 2021-07-30
+## [0.0.2] 2021-09-30
 ### Added
 - inventory is added to the game
 - inventory consists of hints for each specific character
